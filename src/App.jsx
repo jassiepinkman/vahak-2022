@@ -16,7 +16,7 @@ function App() {
         destination: 'Chennai',
         car: 'Hachback',
         carType: ['Hachback', 'Sedan', 'SUV'],
-        travellers: 5,
+        travellers: 4,
         name: 'Jaskaran Singh',
         price: 0,
         phone: '8360573379',
