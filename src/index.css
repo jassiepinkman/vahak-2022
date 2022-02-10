@@ -1,13 +1,186 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.d-flex{
+  display: flex;
+}
+
+.d-flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex-space-b{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.flex-a-center{
+  align-items: center;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.fw-700{
+  font-weight: 700;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.gray{
+  color: gray;
+}
+
+.t-center{
+  text-align: center;
+}
+
+.p24{
+  padding: 20px 40px;
+}
+
+.pb100{
+  padding-bottom: 100px;
+}
+
+.p3{
+  padding: 3px;
+}
+
+.p15{
+  padding: 15px;
+}
+
+.p20{
+  padding: 20px;
+}
+
+.p30{
+  padding: 30px;
+}
+
+.m24{
+  margin: 20px 40px;
+}
+
+.ml-5{
+  margin-left: 5px;
+}
+
+.mb-8{
+  margin-bottom: 8px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
+
+.white{
+  color: #fff;
+}
+
+.alert{
+  color: red;
+}
+
+.bid-btn{
+  background: #0f53fb;
+  border: none;
+  border-radius: 5px;
+}
+
+.bid-btn-disable{
+  background: #edf0f7;
+  color: #b5c9f8;
+  border: none;
+  border-radius: 5px;
+}
+
+.editBtn > button{
+  border: none;
+  background: transparent;
+  height: 15px;
+  padding-left: 2px;
+  color: blue;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  bottom: 2px;
+}
+
+.editBtn > svg{
+  color: #0f53fb;
+}
+
+.nav-logo{
+  padding: 10px 40px;
+}
+
+.nav-logo > img{
+  width: 50px;
+}
+
+.nav-logo > h3{
+  color: #08123b;
+}
+
+.nav-bid{
+  padding: 30px;
+  background: #08123b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page{
+  padding: 40px 20px;
+  width: 525px;
+}
+
+.bid-input > input{
+  border: none;
+  outline: none;
+  font-size: 35px;
+  width: 100px;
+  caret-color: #0f53fb;
+  font-weight: 800;
+  color: #0f53fb;
+}
+
+.bid-input{
+  position: relative;
+  left: 20px;
+}
+
+.bid{
+  font-size: 35px;
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+.otpInput{
+  font-size: 40px;
+  width: 25px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  font-weight: 900;
+  caret-color: #0f53fb;
+  color: #0f53fb;
 }
