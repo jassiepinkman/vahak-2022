@@ -1,7 +1,7 @@
 import TextField from '@mui/material/TextField'; 
 import MenuItem from '@mui/material/MenuItem';
 
-const Page1 = ({nextStep, userDetails}) => {
+const Page1 = ({userDetails}) => {
     
   return (
     <div className="d-flex-center">

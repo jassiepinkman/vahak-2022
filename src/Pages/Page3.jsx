@@ -1,6 +1,6 @@
 import {useState, useRef} from 'react'
 
-const Page3 = ({nextStep, userDetails}) => {
+const Page3 = ({editStep, nextStep, userDetails}) => {
 
     const [otp, setOtp] = useState({otp1: "", otp2: "", otp3: "", otp4: ""});
     const btnRef = useRef();
@@ -40,7 +40,7 @@ const Page3 = ({nextStep, userDetails}) => {
                 </div>
                 <div className='d-flex p20 editBtn'>
                     <i className="fas fa-pencil-alt fa-sm"></i>
-                    <button className='pointer'>Edit</button>
+                    <button className='pointer' onClick={() => editStep(1)}>Edit</button>
                 </div>
             </div>
             <div className='d-flex-space-b'>
@@ -65,7 +65,7 @@ const Page3 = ({nextStep, userDetails}) => {
                         </span>  
                         <div className='d-flex ml-5 editBtn'>
                             <i className="fas fa-pencil-alt"></i>
-                            <button className='pointer'>Edit</button>
+                            <button className='pointer' onClick={() => editStep(2)}>Edit</button>
                         </div>
                     </div>
                 </div>

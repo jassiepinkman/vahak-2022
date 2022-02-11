@@ -53,14 +53,15 @@ function App() {
 
   const [step, setStep] = useState(1);
   const onNextStep = () => setStep(prevStep => prevStep + 1);
+  const editStep = (s) => setStep(s);
 
   return (
     <div className="App">
       <Navbar steps={step}/>
-      {step === 1 && <Page1 nextStep={onNextStep} userDetails={formik}/>}
-      {step === 2 && <Page2 nextStep={onNextStep} userDetails={formik}/>}
-      {step === 3 && <Page3 nextStep={onNextStep} userDetails={formik}/>}
-      {step === 4 && <Page4 userDetails={formik}/>}
+      {step === 1 && <Page1 userDetails={formik}/>}
+      {step === 2 && <Page2 editStep={editStep} userDetails={formik}/>}
+      {step === 3 && <Page3 editStep={editStep} nextStep={onNextStep} userDetails={formik}/>}
+      {step === 4 && <Page4 editStep={editStep} userDetails={formik}/>}
     </div>
   )
 }

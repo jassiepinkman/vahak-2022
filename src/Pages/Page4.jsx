@@ -1,4 +1,4 @@
-const Page4 = ({userDetails}) => {
+const Page4 = ({editStep, userDetails}) => {
   return (
     <div className="d-flex-center">
         <div className='page'>
@@ -10,7 +10,7 @@ const Page4 = ({userDetails}) => {
                 </div>
                 <div className='d-flex p20 editBtn'>
                     <i className="fas fa-pencil-alt"></i>
-                    <button className="pointer">Edit</button>
+                    <button className="pointer" onClick={() => editStep(1)}>Edit</button>
                 </div>
             </div>
             <div className='d-flex-space-b mb-20'>

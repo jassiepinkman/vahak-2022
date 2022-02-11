@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import TextField from '@mui/material/TextField'; 
 
-const Page2 = ({userDetails}) => {
+const Page2 = ({editStep, userDetails}) => {
 
     const [isRateNegotiable, setRateNegotiable] = useState(false);
     const [nextBtn, setNextBtn] = useState(false);
@@ -18,7 +18,7 @@ const Page2 = ({userDetails}) => {
                 </div>
                 <div className='d-flex p20 editBtn'>
                     <i className="fas fa-pencil-alt fa-sm"></i>
-                    <button className='pointer'>Edit</button>
+                    <button className='pointer' onClick={() => editStep(1)}>Edit</button>
                 </div>
             </div>
             <div className='p20 t-center bid-input'>
